@@ -21,7 +21,7 @@ class OnlineDictionary
   # Function to search a word in the online dictionary
   def self.search_online_dictionary(word)
     if $restricted_words.include?(word.downcase)
-      puts "This word is restricted and cannot be searched.".yellow
+      puts "  This word is restricted and cannot be searched.".yellow
       return
     end
 

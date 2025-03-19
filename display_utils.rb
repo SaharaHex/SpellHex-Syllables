@@ -47,6 +47,17 @@ class DisplayUtils
     display_choices.unshift({ name: "All Categories", value: :"0" })
 
     selected_category = prompt.select("Please choose Category:", display_choices)
-  end  
+  end
+
+  # About text
+  def self.welcome_message
+    print_horizontal_line('*', :magenta, 43) # Prints a magenta line of 43 characters
+    puts "⭐    Welcome to SpellHex Syllables     ⭐".bold
+    print_horizontal_line('*', :magenta, 43) # Prints a magenta line of 43 characters
+    puts "A spelling assistance application / "
+    puts "dictionary that breaks down words into"
+    puts "vowel sounds and syllables."
+    print_horizontal_line('*', :magenta, 43) # Prints a magenta line of 43 characters
+  end
   
 end

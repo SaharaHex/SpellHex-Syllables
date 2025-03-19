@@ -17,6 +17,8 @@ def display_menu
     "Exit" => :exit
   }
 
+  DisplayUtils.welcome_message() # About text
+
   # Menu loop
   loop do
     DisplayUtils.print_horizontal_line() # Prints a blue line of 100 characters (from display_utils class)
