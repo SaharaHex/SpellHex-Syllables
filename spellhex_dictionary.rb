@@ -62,7 +62,7 @@ class SpellHexDictionary
             puts "  A restricted word found.".yellow
             next # Skip this definition          
           else
-            puts "  #{index + 1}. #{row[0]}, #{row[1]}"
+            puts "  #{index + 1}. #{row[0]}," + " #{row[1]}".light_white
           end  
         end
       end
