@@ -5,7 +5,7 @@ This application is currently in Beta, as its dictionary contains a limited numb
 
 However, the application provides an option to search an online dictionary and retrieve word meanings.
 
-![Example Image](https://saharahex.uk/wp-content/uploads/2025/02/spellhexsyllables.png)
+![Project outline diagram](https://saharahex.uk/wp-content/uploads/2025/02/spellhexsyllables.png)
 
 ## Recommended IDE Setup
 
