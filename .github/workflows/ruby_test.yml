@@ -22,7 +22,7 @@ jobs:
 
     strategy:
       matrix:
-        ruby-version: ['3.0']
+        ruby-version: ['3.4']
 
     steps:
     - name: Checkout repository
@@ -36,9 +36,6 @@ jobs:
 
     - name: Install dependencies (fallback)
       run: bundle install
-
-    - name: Install Bundler
-      run: gem install bundler -v 2.5.9
 
     - name: Run tests
       run: bundle exec rake
