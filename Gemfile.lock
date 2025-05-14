@@ -1,12 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    rake (13.2.1)
 
 PLATFORMS
   x64-mingw-ucrt
   x86_64-linux
 
 DEPENDENCIES
+  rake
 
 BUNDLED WITH
    2.6.9
