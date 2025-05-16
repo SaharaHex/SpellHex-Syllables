@@ -19,7 +19,7 @@ class SpellHexDictionaryTest < Minitest::Test
     # Capture console output for assertion
     output = capture_io { SpellHexDictionary.query_dictionary("A", "E", "2", "1") }.first
     clean_output = output.gsub(/\e\[[0-9;]*m/, '')  # Removes ANSI codes
-    assert_match /example_word, A sample description/, clean_output
+    assert_match (/example_word, A sample description/), clean_output
     puts "✅ Test Passed: query_dictionary successfully returned expected results" # Confirmation feedback
   end
 
@@ -27,7 +27,7 @@ class SpellHexDictionaryTest < Minitest::Test
     @mock_db.stubs(:execute).returns([])
 
     output = capture_io { SpellHexDictionary.query_dictionary("X", "O", "3", "2") }.first
-    assert_match /No matching records found./, output
+    assert_match (/No matching records found./), output
     puts "✅ Test Passed: handles empty results" # Confirmation feedback
   end
 
@@ -53,7 +53,7 @@ class SpellHexDictionaryTest < Minitest::Test
     @mock_db.stubs(:execute).returns([["Lion", "O", "Long vowel", "2", "Animals"]])
 
     output = capture_io { SpellHexDictionary.get_word_vowel("Lion") }.first
-    assert_match /Vowel: O - Long vowel, Syllables: 2, Category: Animals/, output
+    assert_match (/Vowel: O - Long vowel, Syllables: 2, Category: Animals/), output
     puts "✅ Test Passed: get word vowel" # Confirmation feedback
   end
 end
