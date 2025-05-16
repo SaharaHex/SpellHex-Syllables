@@ -7,6 +7,7 @@ gem 'rake'
 
 group :test do
   gem 'colorize'
+  gem 'sqlite3'
   gem 'minitest'
   gem 'mocha'
 end
